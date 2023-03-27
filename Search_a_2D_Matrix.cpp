@@ -12,7 +12,6 @@ public:
         while(l <= r){
             int mi = (r+l)/2;
             auto mid = getindex(mi);
-            cout<<mid.first<<" "<<mid.second<<endl;
             if(matrix[mid.first][mid.second] == target) return true;
             else if(matrix[mid.first][mid.second] > target) r = mi-1;
             else l = mi+1;
